@@ -1,0 +1,19 @@
+{
+  "name": "html-to-pdf-via-chrome",
+  "version": "0.0.1",
+  "description": "Try to use headless chrome to convert html to pdf",
+  "main": "index.js",
+  "author": "Mykyta Khmel",
+  "license": "MIT",
+  "scripts": {
+    "start": "DEBUG=electronpdf:* electron index.js",
+    "watch": "DEBUG=electronpdf:* nodemon --exec electron index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "electron-pdf": "^1.2.5",
+    "express": "^4.16.3",
+    "html-pdf-chrome": "^0.5.0",
+    "pm2": "^3.0.0"
+  }
+}
